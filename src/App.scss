@@ -1,0 +1,31 @@
+div {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.btn {
+  height: 40px;
+  background: linear-gradient(295.67deg, #DE0D6F 16.23%, #731054 83.77%);
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+  box-shadow: none !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #FFFFFF !important;
+  font-family: "Montserrat", sans-serif !important;
+  text-transform: capitalize !important;
+}

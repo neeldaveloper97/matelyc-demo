@@ -1,0 +1,21 @@
+.mainHeader {
+    border-bottom: 2px solid #731054;
+    padding: 24px 8px;
+    text-align: left;
+
+    &__logo {
+        height: 32px;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 991px) {
+    .mainHeader {
+        padding: 16px 8px;
+        text-align: center;
+
+        &__logo {
+            height: 24px;
+        }
+    }
+}

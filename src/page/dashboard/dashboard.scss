@@ -1,0 +1,303 @@
+.dashboard {
+    padding: 34px 8px;
+
+    &__heading {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        font-family: 'Poppins', sans-serif;
+        color: #000000;
+    }
+
+    &__head {
+        .btn {
+            width: 100%;
+            margin-top: 24px;
+        }
+    }
+}
+
+.uploadedData {
+    margin-top: 116px;
+
+    &__status {
+
+        border: 1px solid #E5E5E5;
+        border-radius: 16px;
+        min-height: 48px;
+        padding: 8px 35px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        font-family: "Montserrat", sans-serif;
+        color: #000000;
+
+        span {
+            width: 32px;
+            height: 32px;
+            background: #DE0D6F;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+    }
+
+    &__table {
+        .MuiTableContainer-root {
+            padding: 6px;
+        }
+
+        table {
+            border-collapse: inherit;
+            border-spacing: 6px;
+
+            thead {
+                th {
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #000000;
+                    border: none;
+                    padding: 12px 30px;
+                }
+            }
+
+            tbody {
+                tr {
+                    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+                    border-radius: 8px;
+
+                    td {
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #000000;
+                        border: none;
+                        padding: 6px 30px;
+                        box-sizing: border-box;
+                        height: 48px;
+                        width: 100%;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.progressBox {
+    .MuiLinearProgress-root {
+        background: #B2B2B2;
+        border-radius: 8px;
+        height: 24px;
+        width: 258px;
+        box-sizing: border-box;
+
+        .MuiLinearProgress-bar {
+            background-color: #3BC171;
+        }
+    }
+}
+
+.uploadModel {
+    .MuiModal-backdrop {
+        background: rgba(0, 0, 0, 0.15);
+    }
+
+    .MuiDialog-paper {
+        background: #FFFFFF;
+        border-radius: 16px;
+        box-shadow: none;
+        max-width: 640px;
+        width: 100%;
+        padding: 40px 40px 16px;
+    }
+
+    .MuiDialogContent-root {
+        padding: 0;
+        max-width: 496px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: #000000;
+    }
+
+    &__text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #666666;
+        margin-top: 8px;
+    }
+
+    &__form {
+        margin-top: 24px;
+
+        .MuiFormControl-root {
+            width: 100%;
+            margin-bottom: 72px;
+            text-align: left;
+
+            .MuiInputBase-input {
+                background: #F2F2F2;
+                border-radius: 8px;
+                height: 40px;
+                box-sizing: border-box;
+                padding: 8px 24px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                font-family: "Montserrat", sans-serif;
+                color: #000000;
+            }
+
+            .MuiSelect-nativeInput+svg {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url("../../assets/images/downArrow-gray.svg");
+
+                path {
+                    display: none;
+                }
+            }
+
+            fieldset {
+                border: none;
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: 8px !important;
+    }
+
+    &__closeBtn {
+        margin-left: auto !important;
+        padding: 0px !important;
+        height: 24px;
+        width: 24px;
+        min-width: 24px !important;
+    }
+}
+
+.uploadModel+.MuiPopover-root.MuiMenu-root {
+    .MuiMenu-paper {
+        filter: drop-shadow(4px 4px 16px rgba(0, 0, 0, 0.1));
+        border-radius: 0px 0px 16px 16px;
+        box-shadow: none;
+
+        .MuiButtonBase-root {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+            padding: 8px 24px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .dashboard {
+        padding: 16px 8px;
+
+        &__heading {
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+
+        &__title {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &__head .btn {
+            margin-top: 64px;
+        }
+    }
+
+    .uploadedData {
+        margin-top: 150px;
+        padding: 0 10px;
+
+        &__status {
+            border-radius: 8px;
+            min-height: 40px;
+            padding: 4px 16px;
+            gap: 22px;
+            font-size: 16px;
+        }
+
+        &__table {
+            .MuiTableContainer-root {
+                padding: 5px 0 0;
+            }
+
+            table {
+                thead th {
+                    padding: 8px 18px;
+                }
+
+                tbody tr {
+                    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+
+                    td {
+                        font-size: 12px;
+                        line-height: 16px;
+                        padding: 6px 18px;
+                        height: 40px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .progressBox {
+        .MuiLinearProgress-root {
+            height: 16px;
+            width: 120px;
+        }
+    }
+
+    .uploadModel {
+        .MuiDialog-paper {
+            padding: 26px;
+            margin: 12px;
+        }
+
+        &__form .MuiFormControl-root {
+            margin-bottom: 50px;
+        }
+    }
+}
